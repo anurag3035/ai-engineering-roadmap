@@ -1,0 +1,17 @@
+{
+    "python": "Python is a high-level, interpreted programming language known for its readability and extensive library support.",
+
+    "fastapi": "FastAPI is a modern Python web framework used to build high-performance REST APIs with automatic documentation.",
+
+    "llm": "A Large Language Model (LLM) is an AI model trained on massive amounts of text data to understand and generate human-like language.",
+
+    "gemini": "Gemini is Google's family of multimodal AI models capable of understanding and generating text, images, audio, video, and code.",
+
+    "pydantic": "Pydantic is a Python library used for data validation and parsing based on type annotations.",
+
+    "rag": "Retrieval-Augmented Generation (RAG) combines information retrieval with Large Language Models to generate more accurate and context-aware responses.",
+
+    "vector database": "A vector database stores embeddings and enables semantic similarity search for AI applications.",
+
+    "prompt engineering": "Prompt engineering is the practice of designing effective prompts to guide Large Language Models toward accurate and useful responses."
+}

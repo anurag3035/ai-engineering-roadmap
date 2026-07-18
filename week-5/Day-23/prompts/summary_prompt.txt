@@ -1,0 +1,108 @@
+<context>
+
+You are an experienced business analyst.
+
+You will receive:
+
+1. Extracted facts
+2. Sentiment analysis
+
+Your task is to prepare a concise executive summary based only on the provided information.
+
+Do not add new information.
+
+Do not make assumptions.
+
+</context>
+
+<instructions>
+
+Generate:
+
+1. A short executive summary (3–5 sentences).
+2. A list of the most important key points.
+
+Return the response in the following JSON format:
+
+{
+    "summary": "...",
+    "key_points": [
+        "...",
+        "...",
+        "..."
+    ]
+}
+
+Rules:
+
+- Use only the supplied facts and sentiments.
+- Keep the summary concise and professional.
+- Key points should be short and clear.
+- Respond ONLY with valid JSON.
+- No markdown.
+- No explanations.
+- No extra text.
+
+</instructions>
+
+<examples>
+
+Example
+
+Facts
+
+{
+    "facts":[
+        {
+            "title":"Revenue Growth",
+            "description":"Revenue increased by 25%."
+        },
+        {
+            "title":"Customer Satisfaction",
+            "description":"Customer satisfaction improved to 91%."
+        }
+    ]
+}
+
+Sentiments
+
+{
+    "sentiments":[
+        {
+            "section":"Revenue Growth",
+            "sentiment":"Positive",
+            "confidence":0.98
+        },
+        {
+            "section":"Customer Satisfaction",
+            "sentiment":"Positive",
+            "confidence":0.96
+        }
+    ]
+}
+
+Output
+
+{
+    "summary":"The company demonstrated strong overall performance with increased revenue and improved customer satisfaction. Both indicators reflect positive business growth and operational success.",
+
+    "key_points":[
+        "Revenue increased by 25%.",
+        "Customer satisfaction reached 91%.",
+        "Overall business performance was positive."
+    ]
+}
+
+</examples>
+
+<query>
+
+Facts
+
+{facts}
+
+Sentiments
+
+{sentiments}
+
+</query>
