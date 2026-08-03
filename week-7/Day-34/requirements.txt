@@ -1,0 +1,6 @@
+google-genai
+python-dotenv
+chromadb
+rank-bm25
+nltk
+numpy
