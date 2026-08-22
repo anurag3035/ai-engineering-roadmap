@@ -1,0 +1,4 @@
+ragas
+datasets
+google-genai
+python-dotenv

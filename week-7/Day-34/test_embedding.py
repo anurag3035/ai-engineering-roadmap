@@ -1,13 +1,23 @@
-from embedding_service import EmbeddingService
+import traceback
 
-embedder = EmbeddingService()
+try:
+    print("Importing EmbeddingService...")
+    from embedding_service import EmbeddingService
+    print("Import successful.")
 
-vector = embedder.embed(
-    "Artificial Intelligence is transforming education."
-)
+    print("Creating EmbeddingService...")
+    embedder = EmbeddingService()
+    print("EmbeddingService created.")
 
-print("Embedding Length :", len(vector))
+    print("Generating embedding...")
+    vector = embedder.embed(
+        "Artificial Intelligence is transforming education."
+    )
 
-print("First 5 Values :")
+    print("Embedding generated successfully.")
+    print("Embedding Length:", len(vector))
+    print("First 5 values:", vector[:5])
 
-print(vector[:5])
+except Exception as e:
+    print("\nAn error occurred:\n")
+    traceback.print_exc()

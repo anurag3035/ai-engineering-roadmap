@@ -1,0 +1,22 @@
+[
+    {
+        "question": "What is FastAPI?",
+        "reference": "FastAPI is a modern Python web framework for building APIs."
+    },
+    {
+        "question": "What is a Large Language Model?",
+        "reference": "A Large Language Model is an AI model trained on massive text data to understand and generate language."
+    },
+    {
+        "question": "What is Server-Sent Events?",
+        "reference": "Server-Sent Events allow servers to stream data to clients over HTTP."
+    },
+    {
+        "question": "What is Retrieval-Augmented Generation?",
+        "reference": "RAG combines retrieval with LLM generation using external knowledge."
+    },
+    {
+        "question": "Why are embeddings used?",
+        "reference": "Embeddings convert text into vectors for semantic similarity search."
+    }
+]
